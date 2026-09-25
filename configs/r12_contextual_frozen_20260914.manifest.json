@@ -1,0 +1,136 @@
+{
+  "checkpoint_id": "r12_contextual_frozen_20260914",
+  "status": "frozen_candidate_not_promoted",
+  "scope": "QA-blind contextual atomic facts plus frozen-r4 retrieval on four complete held-out Mem-Gallery topics",
+  "parent_retrieval": "r4",
+  "mutation_policy": "immutable; all later modules must use a new experiment directory and output suffix",
+  "construction": {
+    "provider": "Velen",
+    "model": "gpt-4.1-mini",
+    "temperature": 0,
+    "prompt_version": "contextual-atomic-facts-v1",
+    "window_turns": 12,
+    "stride_turns": 6,
+    "qa_blind": true,
+    "refer_ids": "model selected from visible bottom-level turns and program validated",
+    "selected_view": "no_role_metadata"
+  },
+  "evaluation": {
+    "provider": "Velen",
+    "route_model": "gpt-4.1-mini",
+    "answer_model": "gpt-4.1-mini",
+    "judge_model": "gpt-4.1-mini",
+    "temperature": 0,
+    "route": "unified_hybrid_route",
+    "top_k": 30,
+    "answer_image_budget": 5,
+    "result_suffix": "r12-contextual-no_role_metadata-new4-full-r1",
+    "calls": 948,
+    "tokens": 1811242,
+    "evaluation_cost_cny": 5.9259,
+    "construction_cost_cny": 2.3535,
+    "total_cost_cny": 8.2794
+  },
+  "results": {
+    "qa": 316,
+    "llm_score": 0.8591772151898734,
+    "acc_at_0_75": 0.8734177215189873,
+    "topics": {
+      "Academic_Animal_Pet_Research_Life": {
+        "qa": 77,
+        "llm_score": 0.9058441558441559,
+        "acc_at_0_75": 0.9090909090909091,
+        "raw_turns": 177,
+        "facts": 220,
+        "cross_turn_facts": 11,
+        "dialogue_sha256": "9289425b20c81b25a217ad1a76009c88ddf02a784881b719f8b7e5b25911b948",
+        "memory_sha256": "de3c9abdf3439e07bcaae24f00244a6167be9c0b98306a4a6f8855e719df6ee3",
+        "retrieval_view_sha256": "42a9f974626b8ad590c93693d5ad5d5737fb2f50632d0cdffde34a552e09a9ae",
+        "result_sha256": "a8b3f13e7598ca7a12ab59cc60ac0efca35ac72bf02eaffa8fc59c188bb5eca0",
+        "ingest_tree_sha256": "f1039dd97bff8c3cecda794a2cc9416a5426821dd07f39d2b4c47e2ec62dde25"
+      },
+      "Architecture_Art_Culture_Exhibition_Technology": {
+        "qa": 74,
+        "llm_score": 0.8378378378378378,
+        "acc_at_0_75": 0.8513513513513513,
+        "raw_turns": 186,
+        "facts": 288,
+        "cross_turn_facts": 18,
+        "dialogue_sha256": "1d1c336cb1412ef866d3d6b7efddeb5dadc1f6ef1fd2678b79239722ae285bd4",
+        "memory_sha256": "1555c2c948b401f88d737f9b71a84260b59bc4353833f9cfd58bc3e4a6b3484c",
+        "retrieval_view_sha256": "c66eda8eb7fa4d2b57e843390ee7ca57dde9c3f193b191e334c1a717aea0ca12",
+        "result_sha256": "76ff1a0665b63246a2849e08e0cc0e7252d7ccb4ae86cfb435fcf98a821c84cc",
+        "ingest_tree_sha256": "82a041e7bd7235190772cff78a18def620bc63bf171cdf42ed07280588de91a9"
+      },
+      "Astronomy_Physics_Scientific_Experiments_Cosmology": {
+        "qa": 54,
+        "llm_score": 0.8148148148148148,
+        "acc_at_0_75": 0.8333333333333334,
+        "raw_turns": 203,
+        "facts": 289,
+        "cross_turn_facts": 25,
+        "dialogue_sha256": "38e1820504b88845f001c2820fdb53e0db8d0a4b9dc59083e5e60f376b864b97",
+        "memory_sha256": "d7ce73eb59ab22448d3096e94ad7a3f604d05c1a8185376543ad44bf81da8207",
+        "retrieval_view_sha256": "8961fd71905ca9b3294cf2c99a7a0038f7bed46c33e39450d01b2de3dcae1d66",
+        "result_sha256": "b252d93ebb1504af354bd137f54acff27df6c7606257b0ad23f99b3398ad92c6",
+        "ingest_tree_sha256": "da5c1ae26dc05062c1d999a6413bd187701022a7760bbf048cb9f673e0d92562"
+      },
+      "Baking_Dessert_Daily_Life_Skill": {
+        "qa": 111,
+        "llm_score": 0.8626126126126126,
+        "acc_at_0_75": 0.8828828828828829,
+        "raw_turns": 262,
+        "facts": 457,
+        "cross_turn_facts": 26,
+        "dialogue_sha256": "7b0169375ef20cfa9ddf67433ca78139f82ce30449e7813bb748ea29610ea859",
+        "memory_sha256": "4fd5fbf4ed0ebd7d9439b69954ccb2dd041ff210c7525cb8eb3e71a41be0c5fe",
+        "retrieval_view_sha256": "f232a71a9ef38a28591e77da339876116fe6a9e379ddd75a0c79acfeee26745f",
+        "result_sha256": "d8ec182ab381a0137d41961bd44b3fdc2f22f6e152b62d8dcd1e59664920c13e",
+        "ingest_tree_sha256": "a5e323a91cf57be40df220f23b6f3d594a2292ec7fc0719e413bf48de772a93a"
+      }
+    }
+  },
+  "source_guards": {
+    "r12_builder_sha256": "cba820519311f1ffa08639ecfe59b666d8226b6f3d547ea1b1a268e6e41e41c2",
+    "r12_view_builder_sha256": "d8d7f7cc8085be27816e9e68d605a64ea63d3a7b5ce7a71ba909afea606aef4a",
+    "r12_full_launcher_sha256": "fd2cefaecae667d79c23bc13acd3d8471977266a1a295d4e42307afceb70eeec",
+    "r4_source_archive_sha256": "46ae73207b5e3e743d8a0180d2b0704412b3c5d1c7755541044029f820da3252",
+    "v2_config_sha256": "ac1437d909dde5d6e5bff5854b3bf2cf0216b96d8ffb41a8da18573cc818fd30",
+    "answer_judge_prompt_sha256": "25ffbcedeafa07a518ef1b26d54433e7f5cddc0e9b17a4d4830a51512a513af5",
+    "retrieval_orchestrator_sha256": "eff54d3e7b8884293dae634c0e8002b86c26bbcc928b89ded30ddcc0ccbe4154",
+    "llm_client_sha256": "eadc1615126facd052f784590be59d25f697f749d57c85d001f2638ce9527cfb"
+  },
+  "embedding": {
+    "service_url": "http://localhost:9981",
+    "model": "Qwen3-VL-Embedding-2B",
+    "dimension": 2048,
+    "dtype": "bfloat16",
+    "attention": "eager",
+    "text_instruction": "Represent the text for retrieval.",
+    "server_sha256": "767e41fa50e7793f98530d081163ec2c410919084ff63c03d10b7105c1a42384",
+    "server_config_sha256": "87ca71136cdec0e1bca9f30d3cf8061168bf06defa33136cb6c04c1530a137e7",
+    "model_implementation_sha256": "8ffa74a1a6bb759610c57865ea416fd4daf9936cb787520e1112a3e1d547f36a",
+    "model_config_sha256": "9172f55b0b9cce70b7f67b10c58a408ccf3ec15c587e6efd4d5f41631237fded",
+    "model_weights_sha256": "c73fa9caeddeb3ff831d46c085a7a5708343248ca777e90f2d486964464509c1",
+    "weights_archived": false
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.1",
+    "torch": "2.10.0+cu128",
+    "faiss": "1.15.0",
+    "transformers": "4.57.6",
+    "openai": "2.53.0",
+    "rank_bm25": "0.2.2",
+    "qwen_vl_utils": "0.0.14",
+    "pillow": "12.3.0",
+    "requests": "2.34.2",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "driver": "535.129.03"
+  },
+  "known_limits": [
+    "The hosted Velen model alias is external state, so a new API run is not guaranteed to be bitwise deterministic even at temperature zero.",
+    "The 4.0 GB embedding weight is identified by SHA-256 but is not duplicated in the checkpoint archive.",
+    "Service credentials are operational secrets and must not be included in a publishable artifact."
+  ]
+}

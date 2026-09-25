@@ -1,0 +1,19 @@
+{
+  "schema_version": "voxpoly-all18-current-audio-run.v1",
+  "status": "zero_api_inputs_verified",
+  "top_k": 30,
+  "text_input": {
+    "mode": "benchmark_provided_text",
+    "asr_enabled": false,
+    "asr_interface": "transcribe(audio_path: str) -> str",
+    "note": "ASR is intentionally not invoked in this GT-text run."
+  },
+  "audio_identity": {
+    "turn_speaker": "online ECAPA + guarded EMA + final alias resolver",
+    "query_asker": "query waveform ECAPA against frozen EMA registry",
+    "external_llm_calls": 0
+  },
+  "addressee": "LLM-inferred from observable dialogue context during memory construction",
+  "qa_or_gold_used_for_memory_or_retrieval": false,
+  "input_manifest_sha256": "f789276911244f5db66a59fefaeb2c95bb06f816741c2ab1040ee37041ec9b99"
+}

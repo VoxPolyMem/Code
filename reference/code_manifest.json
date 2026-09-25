@@ -1,0 +1,26 @@
+{
+  "schema_version": "voxpolymem-v1-code-manifest",
+  "source_commit": "dbe23bcdfef22d875fe4484ad30562561dd8ad23",
+  "files": {
+    "core/planner.py": "a5f04d054fd580924ed0a6039bb65db84536a73705e07886eb01df342e10ebba",
+    "core/iterative_retrieval.py": "6489994785bf2feb3c586afe238025e80ab4b4c788936a9a89f4add5500099c9",
+    "core/memgallery_executor.py": "0c7ffdf35065b17ff129ad2774d4eeaf91fdeb3b5cdb6a52cf5b9ba71834af45",
+    "core/provenance.py": "fc35f373ad5e5601d34bfa6491e3671b494384e59778ecb18f500e17ab5caa52",
+    "core/contextual_fact_views.py": "d8d7f7cc8085be27816e9e68d605a64ea63d3a7b5ce7a71ba909afea606aef4a",
+    "core/temporal_contract.py": "8f03568de014b5e2531372b32e50146e0ad5443cefa3681d00ccf882710503e2",
+    "adapters/build_memgallery_contextual_facts.py": "1ba6b61873a64468fee98dcd8446a31e997215538eb7396b5bc9a759053ba101",
+    "adapters/build_h2h_contextual_facts.py": "33dd13ab76edfe650c5e8ebf71aecabc2c4475faf0d7b5791d2e7dc5ca65b827",
+    "evaluation/memgallery.py": "3d767276595dbdd9218327837c4937063564f41955b4023855a3ff127f27f852",
+    "evaluation/h2h.py": "0ff55d7b2d24f1a96b7c883e77f1b0eb881e3dd15b2e68115c614904e03c135d",
+    "evaluation/voxpoly.py": "2a5e0aa37add047aacdf78ff4e70d37117cef5b907d962605b97e39dbf52adfd",
+    "audio/speaker/online_speaker_identity_pipeline.py": "029cdbcd14f54fade33c08655f792672b2ac8a6d09704d9217c5d6b9770702f6",
+    "audio/speaker/ecapa_encoder.py": "6d7a123fd62faa260d8e545347815ba20cfec32ec6c76c8d1ddf4e7d89a373c1",
+    "audio/speaker/identity_graph.py": "292c16e881607be105056d903a01d5496abdacf651863ae7ae65225681429636",
+    "experiments/voxpoly_r12_integration_v1/build_memory.py": "ece497daa6f0d720e02391bbf8843db2f2c27cc03ba83c90eab27098e48bce13",
+    "experiments/voxpoly_r12_integration_v1/versions/v2_relation_profile/fullcase/all18_current_audio_v1/evaluate_fullcase_shared_scope.py": "66d0484192838d75ec070aea4973bfd3b4c7526c5a08c7eeaa8aed434963d71c",
+    "experiments/voxpoly_r12_integration_v1/versions/v2_relation_profile/fullcase/all18_current_audio_v1/evaluate_case_iterative3.py": "3896f7ef41c01995592f41b3915d6b95e89d5e7d0e730fdc1082b885dfb59061",
+    "vendor/v2_update_pipeline/eval/bench_prompts.py": "1a575bb329be000919904fcbbd5c066b1d09b2dae0e16b52e7fc226e90924618",
+    "scripts/build_public_replay_archive.py": "5f319c0d6d4f6d546308e471d1f940fc799d9330cf5d29312d7b472bce444ef5",
+    "reference/replay_outputs_v1.tgz": "1b1f8125f4d4796d7a3335cd350b9a1533f3d9d756a6d3bc9d6ef0fbf65435fc"
+  }
+}

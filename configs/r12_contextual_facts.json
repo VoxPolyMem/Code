@@ -1,0 +1,20 @@
+{
+  "candidate": "r12_contextual_facts",
+  "parent": "r4",
+  "status": "implementation_complete_pending_real_case_smoke",
+  "model": "gpt-4.1-mini",
+  "provider": "Velen",
+  "window_size": 12,
+  "stride": 6,
+  "memory_change": "Require speaker/addressee on every fact and permit narrowly justified multi-turn facts for coreference, relative time, reply resolution, state transitions, multi-turn answers, and speaker attribution.",
+  "refer_id_contract": "Every fact keeps one or more original bottom turn IDs; no QA, answer, benchmark type, or gold evidence is read during construction.",
+  "ablation_views": [
+    "full",
+    "no_coreference",
+    "single_turn_only",
+    "no_role_metadata"
+  ],
+  "ablation_cost_policy": "All views are deterministically derived from one LLM extraction run.",
+  "promotion_gate": "At least three complete Mem-Gallery topics plus H2HMem and VoxPoly panels before any full promotion run."
+}
+

@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+artifacts/*
+!artifacts/.gitkeep
+data/*
+!data/README.md
+vendor/*/storage/
+vendor/*/logs/
+*.log
+*.lock
+*.pid
+

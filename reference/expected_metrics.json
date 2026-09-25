@@ -1,0 +1,25 @@
+{
+  "schema_version": "voxpolymem-v1-reference-metrics",
+  "method": "VoxPolyMem v1 without RL",
+  "benchmarks": {
+    "mem_gallery": {
+      "topics": 20,
+      "qa": 1711,
+      "mean_llm_score": 0.8600233781414378
+    },
+    "h2hmem": {
+      "dialogues": 5,
+      "qa": 190,
+      "mean_llm_score": 0.7315789473684211
+    },
+    "voxpolybench": {
+      "cases": 18,
+      "qa": 1527,
+      "mean_llm_score": 0.8377537655533727,
+      "iterative_retrieval": true,
+      "max_rounds": 3,
+      "round_budgets": [30, 8, 5]
+    }
+  }
+}
+

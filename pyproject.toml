@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxpolymem"
+version = "1.0.0"
+description = "Unified hierarchical multimodal memory with evidence-grounded iterative retrieval"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.5.1",
+  "openai==2.53.0",
+  "requests==2.34.2",
+  "rank-bm25==0.2.2",
+  "Pillow==12.3.0",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "experiments/voxpoly_r12_integration_v1"]
+pythonpath = [".", "vendor/v2_update_pipeline", "vendor/v3_update_pipeline"]
