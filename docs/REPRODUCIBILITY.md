@@ -27,24 +27,25 @@ rebuild the deterministic archive from an expanded internal result tree with
 
 ## Level 3: live reproduction
 
-Live runs use the same prompt text, model identifier, temperature, memory
-construction, retrieval policy, Top-K, and judge. They require the benchmark
-data and Qwen embedding server. Hosted model inference is not bitwise
-deterministic external state; exact equality is therefore asserted only for
-the archived outputs, while live reruns are expected to reproduce the
-experimental result within normal provider variance. Exact replay verifies
-the reported arithmetic, not that fresh model calls reproduce the same
-predictions. Public live scripts regenerate their initial plans because the
-score-only archive intentionally omits question-derived route text. Authors
-with the original full result archive can optionally extract and supply the
-frozen round-0 plans for a paired-route rerun.
+Live scripts preserve the same prompt text, model identifier, temperature,
+memory construction, retrieval policy, Top-K, and judge. They require the
+complete benchmark inputs and a compatible Qwen embedding server, neither of
+which is redistributed here. Hosted model inference and provider aliases are
+external state: **no byte-identical live result or score tolerance is
+guaranteed**. The offline replay proves the reported arithmetic only; it does
+not prove that fresh model calls reproduce the predictions. Public live
+scripts regenerate their initial plans because the score-only archive omits
+question-derived route text. Authors with the original full result archive
+can optionally extract the frozen round-0 plans for a paired-route rerun.
 
 ## Portability-only changes
 
 The GitHub package replaces private absolute paths, API keys, and provider
-URLs with environment variables. These changes do not alter memory schemas,
-prompts, routing logic, retrieval scoring, stopping rules, or evaluation
-metrics. The public package intentionally contains no credentials.
+URLs with environment variables. These changes do not alter frozen memory
+schemas, prompts, routing logic, retrieval scoring, stopping rules, or
+evaluation metrics. Environment values must be exported before live launch;
+the shell scripts do not parse `.env` automatically. The public package
+intentionally contains no credentials.
 
 ## Versioning rule
 

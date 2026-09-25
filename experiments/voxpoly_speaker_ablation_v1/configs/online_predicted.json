@@ -1,0 +1,15 @@
+{
+  "schema_version": "voxpoly-speaker-view-config.v1",
+  "speaker_mode": "online_predicted",
+  "protocol_name": "Online Acoustic + Final Predicted Alias",
+  "qa_free": true,
+  "strict_coordinate_join": true,
+  "join_key": [
+    "session",
+    "turn_idx"
+  ],
+  "upstream_lock": "upstream_online_speaker_lock.json",
+  "expected_language_model_calls": 0,
+  "online_alias_is_causal_at_each_turn": false,
+  "frozen_r12_files_modified": false
+}
